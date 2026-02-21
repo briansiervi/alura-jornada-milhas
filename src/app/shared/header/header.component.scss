@@ -1,0 +1,20 @@
+.app-header {
+  button {
+    margin: 0 clamp(0.25rem, 0.75vw, 1rem);
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar {
+    background-color: black;
+    color: white;
+    /* Use a responsive horizontal padding: min 2rem on small screens, up to 16rem on large screens */
+    padding: 0 clamp(1rem, 3vw, 16rem);
+  }
+
+  .mat-mdc-outlined-button:not(:disabled) {
+    border-color: white;
+  }
+}

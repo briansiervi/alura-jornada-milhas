@@ -1,13 +1,14 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { BannerComponent } from './shared/banner/banner.component';
-import { CardComponent } from './shared/card/card.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "./app-routing.module";
+import { BannerComponent } from "./shared/banner/banner.component";
+import { CardComponent } from "./shared/card/card.component";
+import { FooterComponent } from "./shared/footer/footer.component";
+import { HeaderComponent } from "./shared/header/header.component";
 
 @NgModule({
   declarations: [
@@ -15,14 +16,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
